@@ -1,0 +1,16 @@
+
+
+
+    ul {
+        display: flex;
+    }
+    li {
+        display: flex;
+    }
+    img {
+        display: block;
+    }
+   .photo {
+
+    margin-left: 20px;
+   }

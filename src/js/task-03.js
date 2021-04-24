@@ -1,0 +1,67 @@
+const images = [
+  {
+    url:
+      'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    alt: 'White and Black Long Fur Cat',
+  },
+  {
+    url:
+      'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
+  },
+  {
+    url:
+      'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    alt: 'Group of Horses Running',
+  },
+];
+
+                    //ищу элемент по его ID
+ //const ulIngredientsEl = document.getElementById('ingredients')
+                        // создаю массив, прохожу по элементам массива ингредиентов, в память записываю лишки с текстом, возвращаю их
+    /* const listLi = ingredients.map(ingr => {
+    let li = document.createElement('li');
+    li.textContent = ingr
+    return li
+})
+                    //записывю массив в хтмл
+ulIngredientsEl.append(...listLi); */
+const ulgalleryEl = document.getElementById('gallery')
+console.log(ulgalleryEl)
+const listLi = images.map(image => {
+    let li = document.createElement('li');
+    li.classList.add('photo');
+    li.insertAdjacentHTML("afterbegin", `<img src = ${image.url} alt=${image.alt}>`)
+    return li
+})
+
+                         //записывю массив в хтмл
+ulgalleryEl.append(...listLi); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
