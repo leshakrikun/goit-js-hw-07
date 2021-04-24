@@ -169,7 +169,7 @@ input), подставляет его текущее значение в `span#n
 
 ```html
 <input
-  type="text"
+  validationCss.getAttribute(data-length)="text"
   id="validation-input"
   data-length="6"
   placeholder="Введи 6 символов"
