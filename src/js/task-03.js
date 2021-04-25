@@ -17,22 +17,11 @@ const images = [
 ];
 
 const ulgalleryEl = document.getElementById('gallery')
-console.log(ulgalleryEl)
 const listLi = images.map(image => {
-    let li = document.createElement('li');
-    li.classList.add('photo');
-    li.insertAdjacentHTML("afterbegin", `<img src = ${image.url} alt=${image.alt}>`)
-    return li
+    const newEl = `<li class = 'photo'><img src = ${image.url} alt=${image.alt}></li>`
+    return newEl
 })
-
-                         //записывю массив в хтмл
-ulgalleryEl.append(...listLi); 
-
-
-
-
-
-
+ulgalleryEl.insertAdjacentHTML("afterbegin", listLi);
 
 
 
