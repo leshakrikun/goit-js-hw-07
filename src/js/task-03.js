@@ -21,7 +21,7 @@ const listLi = images.map(image => {
     const newEl = `<li class = 'photo'><img src = ${image.url} alt=${image.alt}></li>`
     return newEl
 })
-ulgalleryEl.insertAdjacentHTML("afterbegin", listLi);
+ulgalleryEl.insertAdjacentHTML("afterbegin", listLi.join(''));
 
 
 
